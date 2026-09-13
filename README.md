@@ -92,15 +92,11 @@ $user->save();
 ---
 ## 🤖 Catatan Transparansi
 
-
 Aplikasi ini dibangun dengan bantuan Claude AI (Anthropic) sebagai asisten pemrograman — mulai dari diskusi arsitektur, penulisan kode, hingga debugging saat deployment.
-
 
 Sebagai kreator, peran saya meliputi mendefinisikan kebutuhan bisnis, mengambil keputusan desain (design decisions), melakukan testing menyeluruh, dan menyelesaikan proses deploy ke production secara mandiri.
 
-
 Saya membagikan proyek ini secara terbuka karena percaya bahwa transparansi proses kerja sangat penting di era modern, di mana AI telah menjadi bagian normal dari alur kerja developer (sama seperti dokumentasi, Stack Overflow, atau kolaborasi antar-engineer).
-
 
 ---
 📄 Lisensi

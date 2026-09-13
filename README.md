@@ -1,9 +1,9 @@
 🍌 Tani Pisang — Sistem Manajemen Kebun Pisang Cavendish
-Aplikasi manajemen usaha tani pisang cavendish berbasis web, dibangun untuk mengelola operasional kebun nyata milik pribadi — mulai dari pencatatan keuangan, pemantauan progress lahan, pelaporan masalah, pengelolaan siklus panen, hingga laporan konsolidasi untuk evaluasi usaha.
+-Aplikasi manajemen usaha tani pisang cavendish berbasis web, dibangun untuk mengelola operasional kebun nyata milik pribadi — mulai dari pencatatan keuangan, pemantauan progress lahan, pelaporan masalah, pengelolaan siklus panen, hingga laporan konsolidasi untuk evaluasi usaha.
 > ⚠️ **Catatan:** Aplikasi ini sedang aktif digunakan untuk operasional bisnis nyata dan berisi data finansial pribadi, sehingga tidak dibuka untuk akses publik. Source code tersedia di sini untuk keperluan portofolio dan bisa dijalankan sendiri secara lokal — lihat bagian [Instalasi Lokal](#-instalasi-lokal).
 ---
 📌 Latar Belakang
-Proyek ini lahir dari kebutuhan nyata: mengelola usaha tani pisang cavendish yang melibatkan kemitraan tiga pihak (pemodal/pengelola, penyedia bibit sekaligus pembeli, dan pemilik lahan), dengan skema kepemilikan lahan yang bisa berbeda-beda (sewa vs bagi hasil), serta siklus panen pisang yang unik — jumlah pohon produktif berubah tiap siklus karena sistem anakan (tunas) yang dipangkas dan bisa dijual, dipindah ke lahan lain, atau dijadikan pupuk.
+-Proyek ini lahir dari kebutuhan nyata: mengelola usaha tani pisang cavendish yang melibatkan kemitraan tiga pihak (pemodal/pengelola, penyedia bibit sekaligus pembeli, dan pemilik lahan), dengan skema kepemilikan lahan yang bisa berbeda-beda (sewa vs bagi hasil), serta siklus panen pisang yang unik — jumlah pohon produktif berubah tiap siklus karena sistem anakan (tunas) yang dipangkas dan bisa dijual, dipindah ke lahan lain, atau dijadikan pupuk.
 Kebutuhan spesifik inilah yang membuat aplikasi generik (spreadsheet atau software akuntansi umum) terasa kurang pas — sehingga dibangun sistem khusus yang memodelkan alur bisnis ini secara langsung.
 ✨ Fitur Utama
 Manajemen Lahan — setiap lahan berdiri mandiri dengan datanya sendiri (sistem "lahan-first"), bisa switch antar lahan tanpa data tercampur

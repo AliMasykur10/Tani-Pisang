@@ -47,14 +47,45 @@ Kebutuhan spesifik inilah yang membuat aplikasi generik (*spreadsheet* atau soft
 
 ## 📸 Screenshot
 
-*(Screenshot menyusul — lihat folder `docs/screenshots/`)*
+### 1. Dashboard Utama
+Menampilkan ringkasan data penting, statistik umum kebun, dan grafik visualisasi.
+![Dashboard](docs/screenshots/dashboard.png)
+
+### 2. Lahan Picker
+Fitur pemilih lahan cepat untuk memudahkan navigasi sistem berbasis multi-lahan (*lahan-first*).
+![Lahan Picker](docs/screenshots/lahan_picker.png)
+
+### 3. Detail Lahan
+Halaman spesifik per lahan untuk memantau kondisi, informasi mitra, hingga aktivitas terkait lahan tersebut.
+![Detail Lahan](docs/screenshots/detail_lahan.png)
+
+### 4. Transaksi Keuangan
+Pencatatan arus kas masuk dan keluar secara terperinci, termasuk dukungan transaksi non-kas.
+![Transaksi](docs/screenshots/transaksi.png)
+
+### 5. Form Input Data
+Contoh antarmuka formulir yang bersih dan interaktif untuk entri data operasional.
+![Form Input](docs/screenshots/form_input.png)
+
+### 6. Progress Report
+Log pemantauan perkembangan kebun secara berkala yang dilengkapi dengan dokumentasi foto.
+![Progress Report](docs/screenshots/progress_report.png)
+
+### 7. Trouble Report
+Sistem pelaporan masalah operasional kebun dari tahap pelaporan hingga selesai ditindaklanjuti.
+![Trouble Report](docs/screenshots/touble_report.png)
+
+### 8. Panen & Anakan
+Pencatatan hasil siklus panen pisang beserta manajemen pelacakan anakan (bibit).
+![Panen](docs/screenshots/panen.png)
+
+### 9. Export Laporan PDF
+Pratinjau hasil cetak atau unduh laporan konsolidasi usaha dalam format dokumen PDF.
+![Export PDF](docs/screenshots/export_pdf.jpg)
+
 
 ```markdown
-<!-- Contoh penempatan screenshot nantinya: -->
-<!-- ![Dashboard](docs/screenshots/dashboard.png) -->
-<!-- ![Detail Lahan](docs/screenshots/detail-lahan.png) -->
-<!-- ![Panen](docs/screenshots/panen.png) -->
----
+
 🚀 Instalasi Lokal
 Untuk menjalankan aplikasi ini di komputer lokal Anda menggunakan data contoh (dummy data):
 ```bash

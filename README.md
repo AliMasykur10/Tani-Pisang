@@ -56,7 +56,7 @@ Menampilkan ringkasan data penting, statistik umum kebun, dan grafik visualisasi
 ### 2. Lahan Picker
 Fitur pemilih lahan cepat untuk memudahkan navigasi sistem berbasis multi-lahan (*lahan-first*).
 <br>
-<img src="docs/screenshots/lahan_picker.png" width="350" alt="Lahan Picker">
+<img src="docs/screenshots/lahan_picker.png" width="150" alt="Lahan Picker">
 
 ### 3. Detail Lahan
 Halaman spesifik per lahan untuk memantau kondisi, informasi mitra, hingga aktivitas terkait lahan tersebut.

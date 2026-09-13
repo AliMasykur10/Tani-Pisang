@@ -1,61 +1,70 @@
 🍌 Tani Pisang — Sistem Manajemen Kebun Pisang Cavendish
--Aplikasi manajemen usaha tani pisang cavendish berbasis web, dibangun untuk mengelola operasional kebun nyata milik pribadi — mulai dari pencatatan keuangan, pemantauan progress lahan, pelaporan masalah, pengelolaan siklus panen, hingga laporan konsolidasi untuk evaluasi usaha.
-> ⚠️ **Catatan:** Aplikasi ini sedang aktif digunakan untuk operasional bisnis nyata dan berisi data finansial pribadi, sehingga tidak dibuka untuk akses publik. Source code tersedia di sini untuk keperluan portofolio dan bisa dijalankan sendiri secara lokal — lihat bagian [Instalasi Lokal](#-instalasi-lokal).
+> **Aplikasi manajemen usaha tani pisang Cavendish berbasis web**, dibangun khusus untuk mengelola operasional kebun nyata milik pribadi — mulai dari pencatatan keuangan, pemantauan *progress* lahan, pelaporan masalah, pengelolaan siklus panen, hingga laporan konsolidasi untuk evaluasi usaha.
+⚠️ Catatan Privasi: Aplikasi ini sedang aktif digunakan untuk operasional bisnis nyata dan berisi data finansial pribadi, sehingga tidak dibuka untuk akses publik. Source code tersedia di sini untuk keperluan portofolio dan dapat dijalankan secara lokal dengan data contoh — lihat bagian Instalasi Lokal.
 ---
 📌 Latar Belakang
--Proyek ini lahir dari kebutuhan nyata: mengelola usaha tani pisang cavendish yang melibatkan kemitraan tiga pihak (pemodal/pengelola, penyedia bibit sekaligus pembeli, dan pemilik lahan), dengan skema kepemilikan lahan yang bisa berbeda-beda (sewa vs bagi hasil), serta siklus panen pisang yang unik — jumlah pohon produktif berubah tiap siklus karena sistem anakan (tunas) yang dipangkas dan bisa dijual, dipindah ke lahan lain, atau dijadikan pupuk.
-Kebutuhan spesifik inilah yang membuat aplikasi generik (spreadsheet atau software akuntansi umum) terasa kurang pas — sehingga dibangun sistem khusus yang memodelkan alur bisnis ini secara langsung.
+Proyek ini lahir dari kebutuhan nyata di lapangan: mengelola usaha tani pisang Cavendish yang melibatkan kemitraan tiga pihak (pemodal/pengelola, penyedia bibit sekaligus pembeli, dan pemilik lahan).
+Tantangan unik dalam bisnis ini meliputi:
+Skema kepemilikan lahan yang beragam (sistem sewa vs bagi hasil).
+Siklus panen pisang yang spesifik — jumlah pohon produktif berubah tiap siklus karena sistem anakan (tunas) yang dipangkas untuk dijual, dipindahkan ke lahan lain, atau dijadikan pupuk.
+Kebutuhan spesifik inilah yang membuat aplikasi generik (spreadsheet atau software akuntansi umum) kurang optimal, sehingga dibangun sistem khusus yang memodelkan alur bisnis ini secara langsung.
+---
 ✨ Fitur Utama
-Manajemen Lahan — setiap lahan berdiri mandiri dengan datanya sendiri (sistem "lahan-first"), bisa switch antar lahan tanpa data tercampur
-Keuangan — pencatatan transaksi dengan dukungan transaksi non-kas (bibit hibah, anakan yang dipindah dengan nilai estimasi)
-Progress Tracking — log perkembangan lahan berkala dengan foto, untuk pemantauan jarak jauh
-Trouble Report — pelaporan masalah dengan alur status (Dilaporkan → Ditindaklanjuti → Selesai) dan riwayat tindak lanjut
-Panen & Anakan — pencatatan tiap siklus panen dengan tracking nasib anakan (dijual sebagai bibit / dipindah ke lahan lain / dijadikan pupuk)
-Partner & Kesepakatan — pengelolaan mitra dengan sistem versioning kesepakatan (riwayat kesepakatan lama tetap tersimpan saat direvisi)
-Aset — pencatatan aset (pompa air, dll) dengan alokasi penggunaan lintas lahan
-Jadwal & Reminder — jadwal perawatan berulang dengan riwayat pelaksanaan
-Role-Based Access Control — pemisahan akses Admin (pemilik) dan Staff (anggota tim lapangan)
-Dashboard & Visualisasi — grafik tren keuangan, perbandingan antar lahan, ringkasan aset
-Export Laporan PDF — laporan konsolidasi untuk evaluasi berkala
+🌳 Manajemen Lahan ("Lahan-First"): Setiap lahan berdiri mandiri dengan datanya sendiri, memudahkan switch antar lahan tanpa tercampur.
+💰 Keuangan: Pencatatan transaksi lengkap dengan dukungan transaksi non-kas (bibit hibah, anakan yang dipindah dengan nilai estimasi).
+📈 Progress Tracking: Log perkembangan lahan berkala disertai foto untuk pemantauan jarak jauh.
+🛠️ Trouble Report: Pelaporan masalah operasional dengan alur status (`Dilaporkan` → `Ditindaklanjuti` → `Selesai`) beserta riwayatnya.
+🍌 Panen & Anakan: Pencatatan tiap siklus panen dengan tracking nasib anakan (dijual sebagai bibit / dipindah ke lahan lain / dijadikan pupuk).
+🤝 Partner & Kesepakatan: Pengelolaan mitra dengan sistem versioning kesepakatan (riwayat kesepakatan lama tetap tersimpan saat direvisi).
+🚜 Aset: Pencatatan aset (seperti pompa air) dengan alokasi penggunaan lintas lahan.
+📅 Jadwal & Reminder: Penjadwalan perawatan berulang lengkap dengan riwayat pelaksanaannya.
+🔐 Role-Based Access Control (RBAC): Pemisahan hak akses yang jelas antara Admin (pemilik) dan Staff (tim lapangan).
+📊 Dashboard & Visualisasi: Grafik tren keuangan, perbandingan antar lahan, dan ringkasan aset menggunakan Chart.js.
+📄 Export Laporan PDF: Pembuatan laporan konsolidasi untuk evaluasi berkala.
+---
 🛠️ Tech Stack
 Backend: Laravel 11
-Frontend: Blade + Alpine.js + Tailwind CSS
+Frontend: Blade, Alpine.js, Tailwind CSS
 Database: MySQL
-PDF Generation: barryvdh/laravel-dompdf
+PDF Generation: `barryvdh/laravel-dompdf`
 Charting: Chart.js
-Auth: Laravel Breeze
+Authentication: Laravel Breeze
+---
 📸 Screenshot
-<!-- Tambahkan screenshot di sini, contoh: -->
+
+```markdown
+<!-- Contoh penempatan screenshot nantinya: -->
 <!-- ![Dashboard](docs/screenshots/dashboard.png) -->
 <!-- ![Detail Lahan](docs/screenshots/detail-lahan.png) -->
 <!-- ![Panen](docs/screenshots/panen.png) -->
-(Screenshot menyusul — lihat folder `docs/screenshots/`)
+```
+---
 🚀 Instalasi Lokal
-Untuk menjalankan aplikasi ini di komputer sendiri (dengan data contoh, bukan data asli):
+Untuk menjalankan aplikasi ini di komputer lokal Anda menggunakan data contoh (dummy data):
 ```bash
-# Clone repository
-git clone https://github.com/username/tani-pisang.git
-cd tani-pisang
+# 1. Clone repository
+git clone https://github.com/AliMasykur10/Tani-Pisang.git
+cd Tani-Pisang
 
-# Install dependency
+# 2. Install dependencies (PHP & Node.js)
 composer install
 npm install
 
-# Setup environment
+# 3. Setup environment file
 cp .env.example .env
 php artisan key:generate
 
-# Konfigurasi database di .env, lalu jalankan migrasi + data contoh
+# 4. Konfigurasi database di file .env, lalu jalankan migrasi & seeder
 php artisan migrate --seed
 
-# Buat symlink storage untuk upload foto
+# 5. Buat symlink storage untuk upload foto
 php artisan storage:link
 
-# Jalankan server development
+# 6. Jalankan development server
 php artisan serve
 npm run dev
 ```
-Setelah itu, buka `http://localhost:8000`, register akun baru, lalu jadikan admin lewat Tinker:
+Setelah server berjalan, buka `http://localhost:8000`, lakukan registrasi akun baru, lalu ubah role akun tersebut menjadi admin melalui Tinker:
 ```bash
 php artisan tinker
 ```
@@ -64,8 +73,11 @@ $user = App\Models\User::where('email', 'emailkamu@example.com')->first();
 $user->role = 'admin';
 $user->save();
 ```
+---
 🤖 Catatan Transparansi
-Aplikasi ini dibangun dengan bantuan Claude AI (Anthropic) sebagai asisten pemrograman — mulai dari diskusi arsitektur, penulisan kode, hingga debugging saat deployment. Saya berperan mendefinisikan kebutuhan bisnis, mengambil keputusan desain, melakukan testing menyeluruh, dan menyelesaikan proses deploy ke production secara mandiri.
-Saya membagikan ini secara terbuka karena percaya transparansi soal proses kerja itu penting — terutama di era di mana AI menjadi bagian normal dari alur kerja developer, sama seperti dokumentasi, Stack Overflow, atau kolaborasi dengan sesama engineer.
+Aplikasi ini dibangun dengan bantuan Claude AI (Anthropic) sebagai asisten pemrograman — mulai dari diskusi arsitektur, penulisan kode, hingga debugging saat deployment.
+Sebagai kreator, peran saya meliputi mendefinisikan kebutuhan bisnis, mengambil keputusan desain (design decisions), melakukan testing menyeluruh, dan menyelesaikan proses deploy ke production secara mandiri.
+Saya membagikan proyek ini secara terbuka karena percaya bahwa transparansi proses kerja sangat penting di era modern, di mana AI telah menjadi bagian normal dari alur kerja developer (sama seperti dokumentasi, Stack Overflow, atau kolaborasi antar-engineer).
+---
 📄 Lisensi
 Proyek pribadi untuk keperluan operasional usaha tani sendiri.

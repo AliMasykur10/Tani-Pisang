@@ -44,46 +44,54 @@ Kebutuhan spesifik inilah yang membuat aplikasi generik (*spreadsheet* atau soft
 * **Authentication:** Laravel Breeze
 
 ---
+## 📸 Antarmuka Aplikasi (Screenshot)
 
-## 📸 Screenshot
+Berikut adalah beberapa pratinjau tampilan antarmuka dari sistem Tani Pisang:
 
 ### 1. Dashboard Utama
 Menampilkan ringkasan data penting, statistik umum kebun, dan grafik visualisasi.
-![Dashboard](docs/screenshots/dashboard.png)
+<br>
+<img src="docs/screenshots/dashboard.png" width="700" alt="Dashboard">
 
 ### 2. Lahan Picker
 Fitur pemilih lahan cepat untuk memudahkan navigasi sistem berbasis multi-lahan (*lahan-first*).
-![Lahan Picker](docs/screenshots/lahan_picker.png)
+<br>
+<img src="docs/screenshots/lahan_picker.png" width="350" alt="Lahan Picker">
 
 ### 3. Detail Lahan
 Halaman spesifik per lahan untuk memantau kondisi, informasi mitra, hingga aktivitas terkait lahan tersebut.
-![Detail Lahan](docs/screenshots/detail_lahan.png)
+<br>
+<img src="docs/screenshots/detail_lahan.png" width="700" alt="Detail Lahan">
 
 ### 4. Transaksi Keuangan
 Pencatatan arus kas masuk dan keluar secara terperinci, termasuk dukungan transaksi non-kas.
-![Transaksi](docs/screenshots/transaksi.png)
+<br>
+<img src="docs/screenshots/transaksi.png" width="700" alt="Transaksi">
 
 ### 5. Form Input Data
 Contoh antarmuka formulir yang bersih dan interaktif untuk entri data operasional.
-![Form Input](docs/screenshots/form_input.png)
+<br>
+<img src="docs/screenshots/form_input.png" width="700" alt="Form Input">
 
 ### 6. Progress Report
 Log pemantauan perkembangan kebun secara berkala yang dilengkapi dengan dokumentasi foto.
-![Progress Report](docs/screenshots/progress_report.png)
+<br>
+<img src="docs/screenshots/progress_report.png" width="700" alt="Progress Report">
 
 ### 7. Trouble Report
 Sistem pelaporan masalah operasional kebun dari tahap pelaporan hingga selesai ditindaklanjuti.
-![Trouble Report](docs/screenshots/touble_report.png)
+<br>
+<img src="docs/screenshots/touble_report.png" width="700" alt="Trouble Report">
 
 ### 8. Panen & Anakan
 Pencatatan hasil siklus panen pisang beserta manajemen pelacakan anakan (bibit).
-![Panen](docs/screenshots/panen.png)
+<br>
+<img src="docs/screenshots/panen.png" width="700" alt="Panen">
 
 ### 9. Export Laporan PDF
 Pratinjau hasil cetak atau unduh laporan konsolidasi usaha dalam format dokumen PDF.
-![Export PDF](docs/screenshots/export_pdf.jpg)
-
-
+<br>
+<img src="docs/screenshots/export_pdf.jpg" width="700" alt="Export PDF">
 ```markdown
 
 🚀 Instalasi Lokal
